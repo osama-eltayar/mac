@@ -84,7 +84,7 @@ a.lang {
     z-index: 55;
     font-size: 18px;
     text-decoration: none;
-    font-family: 'SpeedeeCondensed-Regular';
+    font-family: 'SpeedeeArabic-Bold';
 }
 a.lang:hover {
     color: #43220E;
@@ -216,18 +216,21 @@ section.countdown li .text {
 .invite-ar,
 .ar-countdown {
     direction: rtl;
-
+   
+}
+.ar-countdown a.lang,
+.invite-ar .lang {
+    font-family: 'SpeedeeCondensed-Bold';
 }
 .invite-ar .text-content,
 .ar-countdown a.lang  {
-    font-family: 'SpeedeeArabic-Regular';
     left: 15px;
     right: auto;
 }
-
+ 
 .invite-ar .text-center .btn,
 .invite-ar .text-content ul li strong,
-.invite-ar .text-content h1,
+.invite-ar .text-content h1, 
 .ar-countdown .countdown-body h1,
 .ar-countdown section.countdown li .text ,
 .ar-countdown .num {
@@ -263,7 +266,7 @@ section.countdown li .text {
  }
 
  @media only screen and (min-width:992px) and (max-width: 1199px) {
-
+    
  }
  @media only screen and (min-width:992px) and (max-width: 1199px) and (orientation: landscape) {
     .image-content img {
@@ -315,8 +318,36 @@ section.countdown li .text {
     .invite .lang {
         right: 15px;
     }
+    .invite-ar .lang {
+        left: 15px;
+        right: auto;
+    }
  }
-
+ @media only screen and  (max-width: 992px) and (orientation: landscape) {
+    .image-content img {
+        max-width: 230px;
+        width: auto;
+    }
+    .num {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    section.countdown li .text {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .countdown-body h1 {
+        margin: 10px 0 0;
+        font-size: 25px;
+    }
+    section.countdown li {
+        padding: 0 10px;
+    }
+    .num span {
+        padding-top: 10px;
+    }
+ }
  @media only screen and  (max-width: 767px) {
     .invite .lang {
         right: 15px;
@@ -353,30 +384,10 @@ section.countdown li .text {
     .num span {
         padding-top: 10px;
     }
+    .invite-ar .lang {
+        left: 15px;
+        right: auto;
+    }
  }
 
- @media only screen and  (max-width: 992px) and (orientation: landscape) {
-    .image-content img {
-        max-width: 230px;
-        width: auto;
-    }
-    .num {
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-    }
-    section.countdown li .text {
-        font-size: 18px;
-        padding-top: 10px;
-    }
-    .countdown-body h1 {
-        margin: 10px 0 0;
-        font-size: 25px;
-    }
-    section.countdown li {
-        padding: 0 10px;
-    }
-    .num span {
-        padding-top: 10px;
-    }
- }
+ 
